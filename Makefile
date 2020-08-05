@@ -19,4 +19,5 @@ coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	rm -rvf $(EXAMPLES_DIR)/*.pdf
+	rm -rvf *.log
